@@ -1,0 +1,40 @@
+.nav-link {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: #dd0902;
+  text-decoration: none;
+}
+
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+body {
+  background: linear-gradient(to bottom, #ffffff, #fff5c2, #b6e9ff, #bd7bff);
+  height: 100vh;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
