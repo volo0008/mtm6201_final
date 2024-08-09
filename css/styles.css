@@ -2,10 +2,14 @@
   position: relative;
   display: inline-block;
   padding: 0.5rem 1rem;
-  color: #dd0902;
+  color: #000000;
   text-decoration: none;
 }
 
+.navbar-brand img {
+  width: 50%;
+  height: auto;
+}
 
 .nav-link::after {
   content: '';
@@ -20,21 +24,106 @@
   transition: transform 0.25s ease-out;
 }
 
-
 .nav-link:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
 body {
   background: linear-gradient(to bottom, #ffffff, #fff5c2, #b6e9ff, #bd7bff);
-  height: 100vh;
-  max-width: 1000px;
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
+.rectangular-container {
+  /* position: absolute; */
+  left: 0;
+  right: 0;
+  /* transform: translateY(-50%); */
+  background-color: #F2F2F2;
+  border: 1px solid #000000;
+  padding: 10px;
+  text-align: center;
+  margin-top: 100px; 
+
+}
+
+.rectangular-content {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.rectangular-content span {
+  margin: 0 10px;
+}
+
+/* ------------------------------TEXT INTRO--------------------------- */
+.intro-h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.img-graphic, .img-ux {
+  width: 100%;
+  height: auto;
+}
+
+.awards-press {
+  padding: 0 200px;
+}
+
+.star {
+  width: 50%;
+  height: auto;
+  margin: 20px 0;
+}
+
+.intro-h1 {
+  margin-bottom: 15px;
+}
+
+.faq-section {
+  text-align: center; 
+}
 
 
+/* ---------------------------------------ACCORDION---------------------------- */
+.accordion {
+  background-color: #ffffff; /* Replace with your desired color */
+  border: solid 1px black;
+  
+}
+
+.accordion-item {
+  border: solid 1px black;
+}
+
+.accordion-button {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  color: #333;
+  padding: 15px;
+  text-align: left;
+}
+
+.accordion-body {
+  padding: 20px;
+}
 
 
-
-
+.accordion-flush {
+  margin: 40px;
+}
+.questions .btn {
+  width: 100%;
+  height: auto;
+}
+/* ---------------------------------------FOOTER------------------------------- */
+footer {
+  display: flex;
+  padding: 40px;
+}
